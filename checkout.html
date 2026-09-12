@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Checkout | Budget Dumpster</title><link rel="stylesheet" href="css/app.css"/><link rel="manifest" href="manifest.json"/></head>
+<body>
+<div class="topbar"><div class="wrap"><span>Mock checkout — no payment is processed.</span></div></div>
+<header class="nav"><div class="wrap"><a class="logo" href="index.html"><span class="mark">BD</span> Budget Dumpster</a></div></header>
+<section class="section"><div class="wrap">
+<h1>Checkout</h1>
+<p class="notice">Budget Dumpster takes most major credit cards. You can use a Visa, Mastercard, Discover or American Express card to pay for your dumpster. We don’t accept cash payments. This page is a mock and will not charge a card.</p>
+<form class="form" onsubmit="submitCheckout(event)">
+  <input required placeholder="Full name"/>
+  <input required placeholder="Delivery address"/>
+  <input required placeholder="City"/>
+  <input required placeholder="ZIP"/>
+  <input required placeholder="Card number (mock)"/>
+  <div class="row"><input required placeholder="MM/YY"/><input required placeholder="CVC"/></div>
+  <button class="btn btn-yellow" type="submit">Submit Payment</button>
+</form>
+</div></section>
+<script src="js/app.js"></script></body></html>
