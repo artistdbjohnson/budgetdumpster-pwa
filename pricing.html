@@ -1,48 +1,131 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>How Much Does It Cost to Rent a Dumpster? | Budget Dumpster</title><link rel="manifest" href="manifest.json"/><link rel="stylesheet" href="css/app.css"/></head>
-<body>
-<div class="topbar"><div class="wrap"><span>Independent design study — not affiliated.</span><a href="tel:+18559005728">Call 855-900-5728</a></div></div>
-<header class="nav"><div class="wrap"><a class="logo" href="index.html"><span class="mark">BD</span> Budget Dumpster</a><nav class="links"><a href="sizes.html">Sizes</a><a href="pricing.html">Pricing</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav><a class="btn btn-yellow" href="cart.html">Order Online</a></div></header>
-<section class="section"><div class="wrap">
-<div class="kicker">Flat-rate pricing</div>
-<h1>Save Money and Time on Your Dumpster Rental</h1>
-<p class="lead">The cost of your dumpster rental depends on several factors, including the size of the container, the weight of your debris and the length of the rental period. On average, dumpsters cost between $217 to $1,040. However, we offer simple flat-rate pricing on all of our dumpster sizes, so you’ll always know the full price upfront.</p>
-</div></section>
-<section id="calculator-section">
-  <div class="inner">
-    <div class="kicker">Try project estimation calculator</div>
-    <h2 style="color:#fff">Get a dumpster within your budget</h2>
-    <div class="calc-grid">
-      <div class="calc-form">
-        <section>
-          <h3>What dumpster size do you need? <span class="val" id="size-val">20</span> yd</h3>
-          <div class="opt" data-size="10"><span class="radio"><span></span></span> 10 Yard</div>
-          <div class="opt" data-size="15"><span class="radio"><span></span></span> 15 Yard</div>
-          <div class="opt on" data-size="20"><span class="radio"><span></span></span> 20 Yard</div>
-          <div class="opt" data-size="30"><span class="radio"><span></span></span> 30 Yard</div>
-          <div class="opt" data-size="40"><span class="radio"><span></span></span> 40 Yard</div>
-        </section>
-        <section>
-          <h3>How fast do you need this?</h3>
-          <div class="opt on" data-days="7"><span class="radio"><span></span></span> Within 7 Days <span class="price-tag">included</span></div>
-          <div class="opt" data-days="10"><span class="radio"><span></span></span> 10-day rental <span class="price-tag">+$25</span></div>
-          <div class="opt" data-days="14"><span class="radio"><span></span></span> 14-day rental <span class="price-tag">+$60</span></div>
-        </section>
-        <section>
-          <h3>Add-ons</h3>
-          <div class="opt" data-extra><span class="check"></span> Extra weight allowance <span class="price-tag">+$75</span></div>
-          <div class="opt" data-permit><span class="check"></span> Help with a street permit <span class="price-tag">+$50</span></div>
-        </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Complete Guide to Dumpster Rental Prices | Budget Dumpster</title>
+  <meta name="description" content="How much does it cost to rent a dumpster? We’ll learn the details of your job and give you an upfront price to fit your project. Get a free quote today." />
+  <meta property="og:title" content="The Complete Guide to Dumpster Rental Prices | Budget Dumpster" />
+  <meta property="og:description" content="How much does it cost to rent a dumpster? We’ll learn the details of your job and give you an upfront price to fit your project. Get a free quote today." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://budgetdumpster-pwa.vercel.app/pricing" />
+  <meta property="og:image" content="https://budgetdumpster-pwa.vercel.app/images/hero-dumpster.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Complete Guide to Dumpster Rental Prices | Budget Dumpster" />
+  <meta name="twitter:description" content="How much does it cost to rent a dumpster? We’ll learn the details of your job and give you an upfront price to fit your project. Get a free quote today." />
+  <meta name="theme-color" content="#111111" />
+  <link rel="canonical" href="https://budgetdumpster-pwa.vercel.app/pricing" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="apple-touch-icon" href="/icons/icon.svg" />
+  <link rel="stylesheet" href="/css/app.css" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('bd-theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+        else document.documentElement.setAttribute('data-theme', window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (localStorage.getItem('bd-lang') === 'pt') document.documentElement.setAttribute('lang', 'pt');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body class="page">
+  <a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
+  <header class="nav liquid-glass">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">BD</span> Budget Dumpster</a>
+    <div class="nav-end">
+      <nav class="nav-links" id="navLinks">
+        <a href="/" data-i18n="nav.home">Home</a>
+        <a href="/sizes" data-i18n="nav.sizes">Sizes</a>
+        <a href="/pricing" aria-current="page" data-i18n="nav.pricing">Pricing</a>
+        <a href="/services" data-i18n="nav.services">Services</a>
+        <a href="/about" data-i18n="nav.about">About</a>
+        <a href="/contact" data-i18n="nav.contact">Contact</a>
+        <a href="tel:+18559005728">855-900-5728</a>
+        <a class="cta cta-nav" href="/cart" data-i18n="nav.order">Order Online</a>
+        <div class="nav-tools">
+          <div class="seg" role="group" aria-label="Language">
+            <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+            <button type="button" data-set-lang="pt" aria-pressed="false">PT</button>
+          </div>
+          <div class="seg" role="group" aria-label="Theme">
+            <button type="button" data-set-theme="light" data-i18n="theme.light">Light</button>
+            <button type="button" data-set-theme="dark" data-i18n="theme.dark">Dark</button>
+          </div>
+        </div>
+      </nav>
+      <a class="cta cta-compact" href="tel:+18559005728">855-900-5728</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="navLinks" data-i18n="nav.menu">Menu</button>
+    </div>
+  </header>
+  <section class="page-hero">
+    <div class="page-hero-bg remodel" aria-hidden="true"></div>
+    <div class="page-hero-inner">
+      <p class="eyebrow">Flat-rate pricing</p>
+      <h1>How Dumpster Prices Work</h1>
+    </div>
+  </section>
+  <main class="page" id="main">
+    <section class="section">
+      <h2>How Much Does It Cost to Rent a Dumpster?</h2>
+      <p>The cost of a dumpster rental depends on a few things: where you're located, the size you need, the type of debris you're tossing and how much it weighs at the end. That's why we make it easy to get a price built around your specific project. It costs between $306 and $1,583 to rent a dumpster, with a national average of $687.</p>
+    </section>
+    <section class="section" style="padding-top:0">
+      <h2>The 5 Factors That Determine Your Dumpster Rental Cost</h2>
+      <p>We take your location, dumpster size, debris type, debris weight and rental period into account when offering a quote. Here’s how these five factors affect your dumpster cost.</p>
+      <div class="cards">
+        <article class="card liquid-glass"><h3>1. Location</h3><p>Disposal fees, demand and fuel costs vary from city to city. It may cost less to rent a dumpster in a small Midwest suburb than in a major city.</p></article>
+        <article class="card liquid-glass"><h3>2. Dumpster Size</h3><p>Our roll off dumpsters come in several different sizes, ranging from 10 to 40 cubic yards. The bigger the bin, the more your dumpster rental will typically cost, since you’re disposing of more debris.</p></article>
+        <article class="card liquid-glass"><h3>3. Debris Type</h3><p>Your disposal cost is determined by the type of debris you’re throwing away. Depending on the city you’re in, you might pay more if you’re tossing difficult-to-process items, such as appliances or mattresses.</p></article>
+        <article class="card liquid-glass"><h3>4. Debris Weight</h3><p>Landfills charge disposal costs based on the tonnage of your debris. We’ll provide a set weight limit when you rent a dumpster, and you must stay within it to avoid extra fees.</p></article>
+        <article class="card liquid-glass"><h3>5. Rental Period</h3><p>We include the length of your rental period in your dumpster price. You can usually have your container on-site for five to 10 days, but this depends on where you’re located.</p></article>
       </div>
-      <div class="est">
-        <h3>Estimated Cost</h3>
-        <p class="muted">You’ll receive a customized quote to avoid overpaying for services you don’t need.</p>
-        <div class="est-card dim"><div>Typical Agency charges minimum</div><div class="amt" id="ag-price">$1,329</div><div>+ Too much extra time & additional cost</div></div>
-        <div class="est-card dim"><div>Regular Freelancer charges minimum</div><div class="amt" id="fr-price">$714</div><div>+ Too much headache & back-and-forth</div></div>
-        <div class="est-card win"><div>With Budget Dumpster</div><div class="amt" id="you-price">$529</div><div>Save your money, time & headache</div></div>
-        <a class="btn btn-yellow" href="checkout.html" onclick="sessionStorage.setItem('bd-cart', sessionStorage.getItem('bd-quote'))">Order this quote</a>
+    </section>
+  </main>
+  <section id="calculator-section">
+    <div class="inner">
+      <div class="kicker">Try project estimation calculator</div>
+      <h2 style="color:#fff">Get a dumpster within your budget</h2>
+      <div class="calc-grid">
+        <div class="calc-form">
+          <section>
+            <h3>What dumpster size do you need? <span class="val" id="size-val">20</span> yd</h3>
+            <div class="opt" data-size="10"><span class="radio"><span></span></span> 10 Yard</div>
+            <div class="opt" data-size="15"><span class="radio"><span></span></span> 15 Yard</div>
+            <div class="opt on" data-size="20"><span class="radio"><span></span></span> 20 Yard</div>
+            <div class="opt" data-size="30"><span class="radio"><span></span></span> 30 Yard</div>
+            <div class="opt" data-size="40"><span class="radio"><span></span></span> 40 Yard</div>
+          </section>
+          <section>
+            <h3>How fast do you need this?</h3>
+            <div class="opt on" data-days="7"><span class="radio"><span></span></span> Within 7 Days <span class="price-tag">included</span></div>
+            <div class="opt" data-days="10"><span class="radio"><span></span></span> 10-day rental <span class="price-tag">+$25</span></div>
+            <div class="opt" data-days="14"><span class="radio"><span></span></span> 14-day rental <span class="price-tag">+$60</span></div>
+          </section>
+          <section>
+            <h3>Add-ons</h3>
+            <div class="opt" data-extra><span class="check"></span> Extra weight allowance <span class="price-tag">+$75</span></div>
+            <div class="opt" data-permit><span class="check"></span> Help with a street permit <span class="price-tag">+$50</span></div>
+          </section>
+        </div>
+        <div class="est">
+          <h3>Estimated Cost</h3>
+          <p class="muted">You’ll receive a customized quote to avoid overpaying for services you don’t need.</p>
+          <div class="est-card dim"><div>Typical Agency charges minimum</div><div class="amt" id="ag-price">$1,329</div><div>+ Too much extra time & additional cost</div></div>
+          <div class="est-card dim"><div>Regular Freelancer charges minimum</div><div class="amt" id="fr-price">$714</div><div>+ Too much headache & back-and-forth</div></div>
+          <div class="est-card win"><div>With Budget Dumpster</div><div class="amt" id="you-price">$529</div><div>Save your money, time & headache</div></div>
+          <a class="btn-yellow" href="/checkout" onclick="sessionStorage.setItem('bd-cart', sessionStorage.getItem('bd-quote'))">Order this quote</a>
+        </div>
       </div>
     </div>
+  </section>
+  <footer class="footer">
+    <p class="disclaimer" data-i18n="study.disclaimer">This site is an independent design study. It is not affiliated with, endorsed by, or operated by Budget Dumpster. Copy and color values are used for study only. Mock checkout does not process real payments. Chrome can install this PWA from the address bar.</p>
+  </footer>
+  <div class="dock liquid-glass">
+    <a class="cta" href="tel:+18559005728">855-900-5728</a>
+    <a class="btn-ghost" href="/cart" data-i18n="nav.order">Order Online</a>
   </div>
-</section>
-<footer><div class="wrap disclaimer">Independent design study. Not affiliated with Budget Dumpster. Estimate is illustrative of published $217–$1,040 range.</div></footer>
-<script src="js/app.js"></script></body></html>
+  <script src="/js/app.js"></script>
+</body>
+</html>

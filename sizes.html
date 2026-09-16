@@ -1,18 +1,116 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Our Dumpster Rental Sizes | Budget Dumpster</title><link rel="manifest" href="manifest.json"/><link rel="stylesheet" href="css/app.css"/></head>
-<body>
-<div class="topbar"><div class="wrap"><span>Independent design study — not affiliated.</span><a href="tel:+18559005728">Call 855-900-5728</a></div></div>
-<header class="nav"><div class="wrap"><a class="logo" href="index.html"><span class="mark">BD</span> Budget Dumpster</a><nav class="links"><a href="sizes.html">Sizes</a><a href="pricing.html">Pricing</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav><a class="btn btn-yellow" href="cart.html">Order Online</a></div></header>
-<section class="section"><div class="wrap">
-<div class="kicker">10 to 40 cubic yards</div>
-<h1>Our Dumpster Rental Sizes</h1>
-<p class="lead">Look through our common dumpster sizes below to find the right option for your job, or give us a call and we'll make sure you get the right fit.</p>
-<div class="cards">
-<article class="card"><h3>10 Yard Dumpster</h3><p class="muted">Capacity: 50-70 Trash Bags</p><p>Ideal For: Attic cleanouts · Light demolition · Concrete disposal</p><button class="btn btn-yellow" onclick="addToCart(10)">Order 10 yd</button></article>
-<article class="card"><h3>15 Yard Dumpster</h3><p class="muted">Capacity: 80-100 Trash Bags</p><p>Ideal For: Bathroom remodels · Roofing repairs · Festivals</p><button class="btn btn-yellow" onclick="addToCart(15)">Order 15 yd</button></article>
-<article class="card"><h3>20 Yard Dumpster</h3><p class="muted">Capacity: 110-130 Trash Bags</p><p>Ideal For: Partial home cleanouts · General construction · Roofing projects</p><button class="btn btn-yellow" onclick="addToCart(20)">Order 20 yd</button></article>
-<article class="card"><h3>30 Yard Dumpster</h3><p class="muted">Capacity: 170-190 Trash Bags</p><p>Ideal For: Office cleanouts · Home additions · Decluttering before a move</p><button class="btn btn-yellow" onclick="addToCart(30)">Order 30 yd</button></article>
-<article class="card"><h3>40 Yard Dumpster</h3><p class="muted">Capacity: 230-250 Trash Bags</p><p>Ideal For: Full home cleanouts · Complete home remodel · Commercial renovations</p><button class="btn btn-yellow" onclick="addToCart(40)">Order 40 yd</button></article>
-</div>
-</div></section>
-<footer><div class="wrap disclaimer">Independent design study. Not affiliated with Budget Dumpster.</div></footer>
-<script src="js/app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Complete Breakdown of Dumpster Rental Sizes | Budget Dumpster</title>
+  <meta name="description" content="What size dumpster do you need? Learn more about our range of roll off dumpster rental sizes and find the right option for your project cleanup." />
+  <meta property="og:title" content="The Complete Breakdown of Dumpster Rental Sizes | Budget Dumpster" />
+  <meta property="og:description" content="What size dumpster do you need? Learn more about our range of roll off dumpster rental sizes and find the right option for your project cleanup." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://budgetdumpster-pwa.vercel.app/sizes" />
+  <meta property="og:image" content="https://budgetdumpster-pwa.vercel.app/images/dumpster-truck.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Complete Breakdown of Dumpster Rental Sizes | Budget Dumpster" />
+  <meta name="twitter:description" content="What size dumpster do you need? Learn more about our range of roll off dumpster rental sizes and find the right option for your project cleanup." />
+  <meta name="theme-color" content="#111111" />
+  <link rel="canonical" href="https://budgetdumpster-pwa.vercel.app/sizes" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="apple-touch-icon" href="/icons/icon.svg" />
+  <link rel="stylesheet" href="/css/app.css" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('bd-theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+        else document.documentElement.setAttribute('data-theme', window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (localStorage.getItem('bd-lang') === 'pt') document.documentElement.setAttribute('lang', 'pt');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body class="page">
+  <a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
+  <header class="nav liquid-glass">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">BD</span> Budget Dumpster</a>
+    <div class="nav-end">
+      <nav class="nav-links" id="navLinks">
+        <a href="/" data-i18n="nav.home">Home</a>
+        <a href="/sizes" aria-current="page" data-i18n="nav.sizes">Sizes</a>
+        <a href="/pricing" data-i18n="nav.pricing">Pricing</a>
+        <a href="/services" data-i18n="nav.services">Services</a>
+        <a href="/about" data-i18n="nav.about">About</a>
+        <a href="/contact" data-i18n="nav.contact">Contact</a>
+        <a href="tel:+18559005728">855-900-5728</a>
+        <a class="cta cta-nav" href="/cart" data-i18n="nav.order">Order Online</a>
+        <div class="nav-tools">
+          <div class="seg" role="group" aria-label="Language">
+            <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+            <button type="button" data-set-lang="pt" aria-pressed="false">PT</button>
+          </div>
+          <div class="seg" role="group" aria-label="Theme">
+            <button type="button" data-set-theme="light" data-i18n="theme.light">Light</button>
+            <button type="button" data-set-theme="dark" data-i18n="theme.dark">Dark</button>
+          </div>
+        </div>
+      </nav>
+      <a class="cta cta-compact" href="tel:+18559005728">855-900-5728</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="navLinks" data-i18n="nav.menu">Menu</button>
+    </div>
+  </header>
+  <section class="page-hero">
+    <div class="page-hero-bg" aria-hidden="true"></div>
+    <div class="page-hero-inner">
+      <p class="eyebrow">10 to 40 cubic yards</p>
+      <h1>A Guide to Roll Off Dumpster Sizes</h1>
+    </div>
+  </section>
+  <main class="page" id="main">
+    <section class="section">
+      <p>Discover the ideal dumpster rental size for any project, from small home cleanouts to large construction demolitions. Look through our common dumpster sizes below to find the right option for your job, or give us a call and we'll make sure you get the right fit.</p>
+      <table class="size-table">
+        <thead>
+          <tr><th>Size</th><th>Typical Dumpster Dimensions</th><th>Estimated Capacity*</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>10 Cubic Yards</td><td>14' long x 7.5' wide x 3.5' high</td><td>50-70 trash bags</td></tr>
+          <tr><td>12 Cubic Yards</td><td>14' long x 7.5' wide x 4' high</td><td>60-85 trash bags</td></tr>
+          <tr><td>15 Cubic Yards</td><td>16' long x 7.5' wide x 4.5' high</td><td>80-100 trash bags</td></tr>
+          <tr><td>20 Cubic Yards</td><td>22' long x 7.5' wide x 4.5' high</td><td>110-130 trash bags</td></tr>
+          <tr><td>30 Cubic Yards</td><td>22' long x 7.5' wide x 6' high</td><td>170-190 trash bags</td></tr>
+          <tr><td>40 Cubic Yards</td><td>22' long x 7.5' wide x 8' high</td><td>230-250 trash bags</td></tr>
+        </tbody>
+      </table>
+      <p class="muted" style="margin-top:12px">*Estimated capacity is measured in 33-gallon trash bags. Please note: our containers are sized by internal volume. External dimensions can vary depending on manufacturer and location, but the capacity of your dumpster will always match the size you select.</p>
+    </section>
+    <section class="section" style="padding-top:0">
+      <h2>Our Dumpster Rental Sizes</h2>
+      <div class="cards">
+        <article class="card liquid-glass"><h3>10 Yard Dumpster</h3><p class="muted">Capacity: 50-70 Trash Bags</p><p>Tackle that attic cleanout, toss old roofing shingles or dispose of heavy debris like bricks using our 10 yard dumpster — our smallest, most affordable size. Ideal for tight spaces and tight budgets.</p><button class="btn-yellow" onclick="addToCart(10)">Order 10 yd</button></article>
+        <article class="card liquid-glass"><h3>12 Yard Dumpster</h3><p class="muted">Capacity: 60-85 Trash Bags</p><p>Go ahead, renovate your master bathroom, remove your old laminate flooring or declutter your garage. Our 12 yard dumpster will accommodate the debris from any moderately sized job, ensuring a quick, streamlined cleanup.</p><a class="cta" href="/pricing#calculator-section">Get a quote</a></article>
+        <article class="card liquid-glass"><h3>15 Yard Dumpster</h3><p class="muted">Capacity: 80-100 Trash Bags</p><p>Mid-sized projects are the perfect match for our 15 yard container. Conduct a community cleanup, tear off a small deck or clear out multiple rooms. There’s room for household junk, renovation debris and more.</p><button class="btn-yellow" onclick="addToCart(15)">Order 15 yd</button></article>
+        <article class="card liquid-glass"><h3>20 Yard Dumpster</h3><p class="muted">Capacity: 110-130 Trash Bags</p><p>Our most popular dumpster size is also our most versatile. Using our 20 yard dumpster for a whole-house estate cleanout, garage demolition or large landscaping project is an efficient, cost-effective disposal solution.</p><button class="btn-yellow" onclick="addToCart(20)">Order 20 yd</button></article>
+        <article class="card liquid-glass"><h3>30 Yard Dumpster</h3><p class="muted">Capacity: 170-190 Trash Bags</p><p>Large-scale cleanups call for a generously sized dumpster. Our 30 yard container handles substantial amounts of debris from home additions, multi-room renovations and demolition projects.</p><button class="btn-yellow" onclick="addToCart(30)">Order 30 yd</button></article>
+        <article class="card liquid-glass"><h3>40 Yard Dumpster</h3><p class="muted">Capacity: 230-250 Trash Bags</p><p>Our 40 yard container — the largest size in most areas — is the ultimate solution for the biggest cleanup and construction projects. From full home remodels to office building cleanouts, this massive bin handles it all.</p><button class="btn-yellow" onclick="addToCart(40)">Order 40 yd</button></article>
+      </div>
+    </section>
+    <section class="section" style="padding-top:0">
+      <h2>Why Choose Budget Dumpster?</h2>
+      <div class="cards">
+        <article class="card liquid-glass"><h3>Upfront Pricing Every Time</h3><p>Get transparent, flat-rate pricing with no hidden fees — what you see is what you pay.</p></article>
+        <article class="card liquid-glass"><h3>On-Time Deliveries and Pickups</h3><p>We’ll drop off your dumpster promptly and haul it away ASAP, keeping your project on schedule.</p></article>
+        <article class="card liquid-glass"><h3>World-Class Customer Service</h3><p>Experience top-notch support from our dedicated team, committed to your complete satisfaction.</p></article>
+        <article class="card liquid-glass"><h3>Flexible Disposal Solutions</h3><p>Enjoy customized disposal options, including generous rental periods and convenient empty-and-return service.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="disclaimer" data-i18n="study.disclaimer">This site is an independent design study. It is not affiliated with, endorsed by, or operated by Budget Dumpster. Copy and color values are used for study only. Mock checkout does not process real payments. Chrome can install this PWA from the address bar.</p>
+  </footer>
+  <div class="dock liquid-glass">
+    <a class="cta" href="tel:+18559005728">855-900-5728</a>
+    <a class="btn-ghost" href="/cart" data-i18n="nav.order">Order Online</a>
+  </div>
+  <script src="/js/app.js"></script>
+</body>
+</html>
