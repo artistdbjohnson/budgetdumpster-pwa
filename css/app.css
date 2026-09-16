@@ -78,8 +78,8 @@ button, input, select, textarea { font: inherit; }
 }
 
 .nav.liquid-glass {
-  --glass: rgba(12, 10, 6, 0.42);
-  --glass-border: rgba(255, 255, 255, 0.16);
+  --glass: rgba(12, 10, 6, 0.34);
+  --glass-border: rgba(255, 255, 255, 0.18);
   color: #fff;
 }
 
@@ -253,9 +253,9 @@ button.submit:hover { background: var(--yellow-dark); }
 .hero-grade {
   z-index: 1;
   background:
-    linear-gradient(90deg, rgba(10, 8, 4, 0.74) 0%, rgba(10, 8, 4, 0.28) 58%, rgba(10, 8, 4, 0.16) 100%),
-    linear-gradient(180deg, rgba(10, 8, 4, 0.32) 0%, rgba(10, 8, 4, 0.2) 42%, rgba(10, 8, 4, 0.78) 100%),
-    linear-gradient(115deg, rgba(245, 196, 0, 0.1), transparent 42%);
+    linear-gradient(90deg, rgba(10, 8, 4, 0.66) 0%, rgba(10, 8, 4, 0.2) 58%, rgba(10, 8, 4, 0.08) 100%),
+    linear-gradient(180deg, rgba(10, 8, 4, 0.08) 0%, rgba(10, 8, 4, 0.16) 38%, rgba(10, 8, 4, 0.78) 100%),
+    linear-gradient(115deg, rgba(245, 196, 0, 0.08), transparent 42%);
 }
 .hero-grain {
   z-index: 2;
