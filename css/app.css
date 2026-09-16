@@ -253,8 +253,9 @@ button.submit:hover { background: var(--yellow-dark); }
 .hero-grade {
   z-index: 1;
   background:
-    linear-gradient(90deg, rgba(10, 8, 4, 0.58) 0%, rgba(10, 8, 4, 0.12) 58%),
-    linear-gradient(180deg, rgba(10, 8, 4, 0.18) 0%, rgba(10, 8, 4, 0.22) 48%, rgba(10, 8, 4, 0.62) 100%);
+    linear-gradient(90deg, rgba(10, 8, 4, 0.74) 0%, rgba(10, 8, 4, 0.28) 58%, rgba(10, 8, 4, 0.16) 100%),
+    linear-gradient(180deg, rgba(10, 8, 4, 0.32) 0%, rgba(10, 8, 4, 0.2) 42%, rgba(10, 8, 4, 0.78) 100%),
+    linear-gradient(115deg, rgba(245, 196, 0, 0.1), transparent 42%);
 }
 .hero-grain {
   z-index: 2;
@@ -325,6 +326,10 @@ h1 {
   border-radius: var(--r);
   color: #fff;
 }
+.trust-row .liquid-glass {
+  --glass: rgba(255, 255, 255, 0.12);
+  --glass-border: rgba(255, 255, 255, 0.22);
+}
 .trust-row b {
   display: block;
   font-family: Inter, sans-serif;
@@ -380,7 +385,7 @@ html[data-theme="light"] .card,
 html[data-theme="light"] .stat,
 html[data-theme="light"] .panel,
 html[data-theme="light"] .step {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.36);
 }
 .card:hover { transform: translateY(-2px); }
 .card h3,
@@ -613,7 +618,7 @@ html[data-theme="dark"] .band::before {
 }
 .band > * { position: relative; z-index: 1; }
 
-@media (min-width: 821px) {
+@media (min-width: 1081px) {
   .cta-compact { display: none; }
 }
 @media (max-width: 1140px) {
@@ -625,7 +630,7 @@ html[data-theme="dark"] .band::before {
   .footgrid { grid-template-columns: 1fr; }
 }
 
-@media (max-width: 820px) {
+@media (max-width: 1080px) {
   .nav-links {
     display: none;
     position: absolute;
@@ -646,6 +651,9 @@ html[data-theme="dark"] .band::before {
   .nav-tools { justify-content: space-between; }
   .menu-btn { display: inline-flex; }
   .cta-nav { display: none; }
+}
+
+@media (max-width: 820px) {
   .trust-row,
   .stats,
   .steps { grid-template-columns: 1fr; }

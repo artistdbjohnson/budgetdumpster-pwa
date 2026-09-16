@@ -15,7 +15,8 @@ const ASSETS=[
   '/success.html',
   '/images/grain.svg',
   '/images/hero-dumpster.jpg',
-  '/icons/icon.svg'
+  '/icons/icon.svg',
+  '/favicon.ico'
 ];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)));});
 self.addEventListener('activate',e=>{
