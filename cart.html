@@ -1,10 +1,76 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Cart | Budget Dumpster</title><link rel="stylesheet" href="css/app.css"/><link rel="manifest" href="manifest.json"/></head>
-<body>
-<div class="topbar"><div class="wrap"><span>Independent design study — mock cart only.</span><a href="index.html">Home</a></div></div>
-<header class="nav"><div class="wrap"><a class="logo" href="index.html"><span class="mark">BD</span> Budget Dumpster</a><a class="btn btn-yellow" href="pricing.html">Keep shopping</a></div></header>
-<section class="section"><div class="wrap">
-<h1>Order Online</h1>
-<div id="cart-body"></div>
-</div></section>
-<footer><div class="wrap disclaimer">Mock cart. No real charges.</div></footer>
-<script src="js/app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order Online | Budget Dumpster</title>
+  <meta name="description" content="Order a roll off dumpster online. Mock cart for an independent Budget Dumpster design study — no real charges." />
+  <meta property="og:title" content="Order Online | Budget Dumpster" />
+  <meta property="og:description" content="Order a roll off dumpster online. Mock cart for an independent Budget Dumpster design study — no real charges." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://budgetdumpster-pwa.vercel.app/cart" />
+  <meta property="og:image" content="https://budgetdumpster-pwa.vercel.app/images/hero-dumpster.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#111111" />
+  <link rel="canonical" href="https://budgetdumpster-pwa.vercel.app/cart" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/app.css" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('bd-theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+        else document.documentElement.setAttribute('data-theme', window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (localStorage.getItem('bd-lang') === 'pt') document.documentElement.setAttribute('lang', 'pt');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body class="page">
+  <a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
+  <header class="nav liquid-glass">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">BD</span> Budget Dumpster</a>
+    <div class="nav-end">
+      <nav class="nav-links" id="navLinks">
+        <a href="/" data-i18n="nav.home">Home</a>
+        <a href="/sizes" data-i18n="nav.sizes">Sizes</a>
+        <a href="/pricing" data-i18n="nav.pricing">Pricing</a>
+        <a href="/cart" aria-current="page" data-i18n="nav.order">Order Online</a>
+        <div class="nav-tools">
+          <div class="seg" role="group" aria-label="Language">
+            <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+            <button type="button" data-set-lang="pt" aria-pressed="false">PT</button>
+          </div>
+          <div class="seg" role="group" aria-label="Theme">
+            <button type="button" data-set-theme="light" data-i18n="theme.light">Light</button>
+            <button type="button" data-set-theme="dark" data-i18n="theme.dark">Dark</button>
+          </div>
+        </div>
+      </nav>
+      <a class="cta cta-compact" href="/pricing">Keep shopping</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="navLinks" data-i18n="nav.menu">Menu</button>
+    </div>
+  </header>
+  <section class="page-hero">
+    <div class="page-hero-bg" aria-hidden="true"></div>
+    <div class="page-hero-inner">
+      <p class="eyebrow">Mock cart</p>
+      <h1>Order Online</h1>
+    </div>
+  </section>
+  <main class="page" id="main">
+    <section class="section">
+      <div id="cart-body"></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="disclaimer" data-i18n="study.mock">Mock cart. Independent design study, not affiliated.</p>
+  </footer>
+  <div class="dock liquid-glass">
+    <a class="cta" href="tel:+18559005728">855-900-5728</a>
+    <a class="btn-ghost" href="/pricing">Keep shopping</a>
+  </div>
+  <script src="/js/app.js"></script>
+</body>
+</html>

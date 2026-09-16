@@ -1,18 +1,91 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Dumpster Rental Services | Budget Dumpster</title><link rel="stylesheet" href="css/app.css"/><link rel="manifest" href="manifest.json"/></head>
-<body>
-<div class="topbar"><div class="wrap"><span>Independent design study — not affiliated.</span><a href="tel:+18559005728">Call 855-900-5728</a></div></div>
-<header class="nav"><div class="wrap"><a class="logo" href="index.html"><span class="mark">BD</span> Budget Dumpster</a><nav class="links"><a href="sizes.html">Sizes</a><a href="pricing.html">Pricing</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav><a class="btn btn-yellow" href="cart.html">Order Online</a></div></header>
-<section class="section"><div class="wrap">
-<h1>We've Got the Right Roll Off Dumpster Rental for Your Job</h1>
-<p class="lead">Call us before you rent a dumpster, and save more. Whether you’re a homeowner or a contractor, our roll off dumpster service can help with all types of cleanups - no project is too big or small.</p>
-<div class="cards">
-<article class="card"><h3>Residential</h3><p>Dumpsters for Any Home Project. Furniture, carpet, boxes, clothes, toys, appliances and more.</p></article>
-<article class="card"><h3>Construction</h3><p>Containers for Every Contractor. Drywall, flooring, tile, lumber, windows, glass, siding.</p></article>
-<article class="card"><h3>Yard waste</h3><p>Bins for Your Landscaping Project. Shrubs, grass clippings, dirt, small branches and leaves.</p></article>
-<article class="card"><h3>Concrete</h3><p>Easy Concrete Debris Removal. 10 and 20 yard roll off dumpsters for “clean” concrete loads.</p></article>
-<article class="card"><h3>Roofing</h3><p>Affordable Shingle Disposal. Used only for disposing of shingles and sheathing.</p></article>
-</div>
-<p class="muted" style="margin-top:24px">We speak your language! In the hauling business, dumpster rentals can be called by many different names, such as debris boxes, containers, roll off containers, temporary containers, bins, tubs, roll off dumpsters or cans.</p>
-</div></section>
-<footer><div class="wrap disclaimer">Independent design study. Not affiliated with Budget Dumpster.</div></footer>
-<script src="js/app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dumpster Rental Services | Budget Dumpster</title>
+  <meta name="description" content="Whether you’re a homeowner or a contractor, our roll off dumpster service can help with all types of cleanups - no project is too big or small." />
+  <meta property="og:title" content="Dumpster Rental Services | Budget Dumpster" />
+  <meta property="og:description" content="Whether you’re a homeowner or a contractor, our roll off dumpster service can help with all types of cleanups - no project is too big or small." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://budgetdumpster-pwa.vercel.app/services" />
+  <meta property="og:image" content="https://budgetdumpster-pwa.vercel.app/images/remodel.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dumpster Rental Services | Budget Dumpster" />
+  <meta name="twitter:description" content="Whether you’re a homeowner or a contractor, our roll off dumpster service can help with all types of cleanups - no project is too big or small." />
+  <meta name="theme-color" content="#111111" />
+  <link rel="canonical" href="https://budgetdumpster-pwa.vercel.app/services" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="apple-touch-icon" href="/icons/icon.svg" />
+  <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/app.css" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('bd-theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+        else document.documentElement.setAttribute('data-theme', window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (localStorage.getItem('bd-lang') === 'pt') document.documentElement.setAttribute('lang', 'pt');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body class="page">
+  <a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
+  <header class="nav liquid-glass">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">BD</span> Budget Dumpster</a>
+    <div class="nav-end">
+      <nav class="nav-links" id="navLinks">
+        <a href="/" data-i18n="nav.home">Home</a>
+        <a href="/sizes" data-i18n="nav.sizes">Sizes</a>
+        <a href="/pricing" data-i18n="nav.pricing">Pricing</a>
+        <a href="/services" aria-current="page" data-i18n="nav.services">Services</a>
+        <a href="/about" data-i18n="nav.about">About</a>
+        <a href="/contact" data-i18n="nav.contact">Contact</a>
+        <a href="tel:+18559005728">855-900-5728</a>
+        <a class="cta cta-nav" href="/cart" data-i18n="nav.order">Order Online</a>
+        <div class="nav-tools">
+          <div class="seg" role="group" aria-label="Language">
+            <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+            <button type="button" data-set-lang="pt" aria-pressed="false">PT</button>
+          </div>
+          <div class="seg" role="group" aria-label="Theme">
+            <button type="button" data-set-theme="light" data-i18n="theme.light">Light</button>
+            <button type="button" data-set-theme="dark" data-i18n="theme.dark">Dark</button>
+          </div>
+        </div>
+      </nav>
+      <a class="cta cta-compact" href="tel:+18559005728">855-900-5728</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="navLinks" data-i18n="nav.menu">Menu</button>
+    </div>
+  </header>
+  <section class="page-hero">
+    <div class="page-hero-bg remodel" aria-hidden="true"></div>
+    <div class="page-hero-inner">
+      <p class="eyebrow">Roll off dumpsters</p>
+      <h1>We've Got the Right Roll Off Dumpster Rental for Your Job</h1>
+    </div>
+  </section>
+  <main class="page" id="main">
+    <section class="section">
+      <p>Call us before you rent a dumpster, and save more. Whether you’re a homeowner or a contractor, our roll off dumpster service can help with all types of cleanups - no project is too big or small. Plus, we deliver to residential driveways, construction sites, businesses and more.</p>
+      <div class="cards">
+        <article class="card liquid-glass"><h3>Residential</h3><p>Dumpsters for Any Home Project. Furniture, carpet, boxes, clothes, toys, appliances and more.</p></article>
+        <article class="card liquid-glass"><h3>Construction</h3><p>Containers for Every Contractor. Drywall, flooring, tile, lumber, windows, glass, siding.</p></article>
+        <article class="card liquid-glass"><h3>Yard waste</h3><p>Bins for Your Landscaping Project. Shrubs, grass clippings, dirt, small branches and leaves.</p></article>
+        <article class="card liquid-glass"><h3>Concrete</h3><p>Easy Concrete Debris Removal. 10 and 20 yard roll off dumpsters for “clean” concrete loads.</p></article>
+        <article class="card liquid-glass"><h3>Roofing</h3><p>Affordable Shingle Disposal. Used only for disposing of shingles and sheathing.</p></article>
+      </div>
+      <p class="muted" style="margin-top:24px">We speak your language! In the hauling business, dumpster rentals can be called by many different names, such as debris boxes, containers, roll off containers, temporary containers, bins, tubs, roll off dumpsters or cans. But rest assured, they all mean the same thing at Budget Dumpster: a hassle-free waste removal option for the kinds of messes you can’t leave at the curb.</p>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="disclaimer" data-i18n="study.disclaimer">This site is an independent design study. It is not affiliated with, endorsed by, or operated by Budget Dumpster. Copy and color values are used for study only. Mock checkout does not process real payments. Chrome can install this PWA from the address bar.</p>
+  </footer>
+  <div class="dock liquid-glass">
+    <a class="cta" href="tel:+18559005728">855-900-5728</a>
+    <a class="btn-ghost" href="/cart" data-i18n="nav.order">Order Online</a>
+  </div>
+  <script src="/js/app.js"></script>
+</body>
+</html>

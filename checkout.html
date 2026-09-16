@@ -1,18 +1,67 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Checkout | Budget Dumpster</title><link rel="stylesheet" href="css/app.css"/><link rel="manifest" href="manifest.json"/></head>
-<body>
-<div class="topbar"><div class="wrap"><span>Mock checkout — no payment is processed.</span></div></div>
-<header class="nav"><div class="wrap"><a class="logo" href="index.html"><span class="mark">BD</span> Budget Dumpster</a></div></header>
-<section class="section"><div class="wrap">
-<h1>Checkout</h1>
-<p class="notice">Budget Dumpster takes most major credit cards. You can use a Visa, Mastercard, Discover or American Express card to pay for your dumpster. We don’t accept cash payments. This page is a mock and will not charge a card.</p>
-<form class="form" onsubmit="submitCheckout(event)">
-  <input required placeholder="Full name"/>
-  <input required placeholder="Delivery address"/>
-  <input required placeholder="City"/>
-  <input required placeholder="ZIP"/>
-  <input required placeholder="Card number (mock)"/>
-  <div class="row"><input required placeholder="MM/YY"/><input required placeholder="CVC"/></div>
-  <button class="btn btn-yellow" type="submit">Submit Payment</button>
-</form>
-</div></section>
-<script src="js/app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Checkout | Budget Dumpster</title>
+  <meta name="description" content="Budget Dumpster takes most major credit cards. This page is a mock and will not charge a card." />
+  <meta property="og:title" content="Checkout | Budget Dumpster" />
+  <meta property="og:description" content="Budget Dumpster takes most major credit cards. This page is a mock and will not charge a card." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://budgetdumpster-pwa.vercel.app/checkout" />
+  <meta property="og:image" content="https://budgetdumpster-pwa.vercel.app/images/hero-dumpster.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#111111" />
+  <link rel="canonical" href="https://budgetdumpster-pwa.vercel.app/checkout" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/app.css" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('bd-theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+        else document.documentElement.setAttribute('data-theme', window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (localStorage.getItem('bd-lang') === 'pt') document.documentElement.setAttribute('lang', 'pt');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body class="page">
+  <a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
+  <header class="nav liquid-glass">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">BD</span> Budget Dumpster</a>
+    <div class="nav-end">
+      <a class="cta cta-compact" href="/cart">Cart</a>
+    </div>
+  </header>
+  <section class="page-hero">
+    <div class="page-hero-bg house" aria-hidden="true"></div>
+    <div class="page-hero-inner">
+      <p class="eyebrow">Mock checkout</p>
+      <h1>Checkout</h1>
+    </div>
+  </section>
+  <main class="page" id="main">
+    <section class="section">
+      <p class="notice">Budget Dumpster takes most major credit cards. You can use a Visa, Mastercard, Discover or American Express card to pay for your dumpster. We don’t accept cash payments. This page is a mock and will not charge a card.</p>
+      <form class="form" style="margin-top:20px" onsubmit="submitCheckout(event)">
+        <input required placeholder="Full name" data-i18n-placeholder="form.fullname" />
+        <input required placeholder="Delivery address" data-i18n-placeholder="form.address" />
+        <input required placeholder="City" data-i18n-placeholder="form.city" />
+        <input required placeholder="ZIP" data-i18n-placeholder="form.zip" />
+        <input required placeholder="Card number (mock)" data-i18n-placeholder="form.card" />
+        <div class="row" style="margin-top:0">
+          <input required placeholder="MM/YY" data-i18n-placeholder="form.expiry" />
+          <input required placeholder="CVC" data-i18n-placeholder="form.cvc" />
+        </div>
+        <button class="cta" type="submit" data-i18n="form.pay">Submit Payment</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="disclaimer" data-i18n="study.checkout">Mock checkout — no payment is processed. This is an independent design study.</p>
+  </footer>
+  <script src="/js/app.js"></script>
+</body>
+</html>
